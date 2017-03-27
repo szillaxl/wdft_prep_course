@@ -2,7 +2,7 @@
 Exercise #1
 Initialize an empty array below in the variable numbers.
 */
-var numbers;
+var numbers = [0];
 console.log('hello world')
 
 /*
