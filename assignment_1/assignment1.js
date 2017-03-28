@@ -16,7 +16,7 @@ for(var i=0; i<numbers.length; i++)
 
 {
     
-    console.log(i,numbers)
+    console.log([i],numbers)
     //use the array push() method here.
 }
 

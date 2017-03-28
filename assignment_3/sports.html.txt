@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+   <html>      
+     <head>
+       <title> Toronto Sports </title>
+     </head>
+     <body>
+      <header>
+       <h1> A Legacy of Excellence </h1>
+         <p> Toronto has teams for a large number of professional sports: </p>
+      </header>
+      <section>
+ <ul>
+    <li>NHL
+    <li>MLB
+    <li>NBA
+    <li>NLL
+ </ul>
+      </section>
+     <section>
+         <h2> Toronto Maple Leafs </h2>
+<p> <strong>The Toronto Maple Leafs</strong> are a hockey team in the NHL. They play at the Air Canada Centre. For the latest news, visit <a href="https://www.nhl.com/mapleleafs/">Maple Leafs</a></p>
+
+</strong>
