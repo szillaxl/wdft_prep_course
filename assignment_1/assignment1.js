@@ -2,7 +2,7 @@
 Exercise #1
 Initialize an empty array below in the variable numbers.
 */
-var numbers = new Array();
+var numbers = [];
 console.log(numbers)
 
 /*
@@ -11,13 +11,12 @@ Using the loop provided for you below, use an array's push method to insert the 
 0 to 10 into positions 0 through 10 of the numbers array you just initialized above.
 'If you're not sure how to use the array push method go back and re read this module on data strucutres.'
 */
-numbers.push('0','1','2','3','4','5','6','7','8','9','10')
+numbers.push(0, 1, 2 , 3, 4, 5, 6, 7, 8 , 9, 10)
 for(var i=0; i<numbers.length; i++)
 
 {
-    
-    console.log([i],numbers)
-    //use the array push() method here.
+    var str=i+","+numbers[i];
+    console.log(str)    //use the array push() method here.
 }
 
 
@@ -28,22 +27,23 @@ Test that you used the array push method correctly by printing the sum of the va
 The outputted value should be 9.
 */
 
-
-
+var numval = numbers[3]+numbers[6];
+console.log(numval)
 
 /*
 Exercise #4
 Use the console.log() function and the array .pop() to add all the values in the array.
 */
 
-var sum = 0;
-/* remove this line to uncomment the code block
-while(numbers.length != 0){
-    //write pop function here
-}
-remove this line to uncomment the code block */
-console.log(sum);
+var sum=0;
+for(var i=0; i<numbers.length; i++)
 
+{
+    sum+=numbers.pop(i);
+  
+   
+}
+console.log(sum);
 
 /*
 Exercise #5
