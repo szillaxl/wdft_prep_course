@@ -1,0 +1,19 @@
+body
+{
+    background-color:yellow
+}
+
+p
+{
+font-family:"Arial";
+font-size:16px;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+#pink {
+    color: deeppink;
+}
