@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+   <title>jquery</title>
+
+   </head>
+
+<body>
+<h1>jquery</h1>
+<div>
+    <div>
+    <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    </ul>  
+    </div>
+    <div>
+        test stuff
+    </div>
+</div>
+<p>hey</p>
+<p>hello</p>
+
+<button id="button" type="button">Click Here!</button>
+
+
+
+
+<script>
+$('h1').css('color','red');
+var tag = $('p');
+
+var h1 = $('h1').html();
+console.log(h1);
+
+var ul = document.getElementsByTagName("ul");
+console.log(ul);
+
+$(document).ready(function() 
+{
+console.log("Document Ready!");
+});
+
+$('#button').click(my_click_function);
+
+function my_click_function() {
+console.log("Clicked!");
+}
+
+
+$("button").click(function(){
+    $("button").animate({
+         height: '150px',
+        width: '150px'
+    });
+}); 
+
+$( "p" ).append( document.createTextNode( "Now this says this" ) );
+
+
+</script>
+</body>
+
+</html>
