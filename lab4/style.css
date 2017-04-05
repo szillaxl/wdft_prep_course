@@ -1,0 +1,13 @@
+.rowheight {
+    height: 300px;
+    border: 1pX black solid;
+}
+
+.footheight {
+    height: 60px;
+    border: 1pX black solid;
+}
+
+img {
+    float: left;
+}
