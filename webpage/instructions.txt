@@ -1,0 +1,11 @@
+Instructions
+
+The goal of this assignment is to replicate the webpage 
+shown below using HTML and CSS. 
+
+
+FEATURES CHECKLIST:
+
+Nav bar stays in same position when scrolling
+BrainStation logo links to brainstation.io
+Side Bar headers change when you mouse over them

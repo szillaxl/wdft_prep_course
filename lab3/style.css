@@ -1,0 +1,45 @@
+
+
+#header {
+    width:100%;
+    border: 1px solid #111;
+    
+}
+
+
+#msec .lsection {
+    width: 22%;
+    display: inline-block;
+    border: 1px solid #111;
+    vertical-align: top;
+}
+
+#msec .msection {
+    width: 59%;
+    display: inline-block;
+    border: 1px solid #111;
+    vertical-align: top;
+}
+
+#msec .rsection {
+    width: 16%;
+    display: inline-block;
+    border: 1px solid #111;
+    vertical-align: top;
+}
+
+#footer .left{
+    width:49%;
+    display: inline-block;
+    border: 1px solid #111;
+}
+
+#footer .right{
+    width:49%;
+    display: inline-block;
+    border: 1px solid #111;
+}
+
+img {
+    float: left;
+}
