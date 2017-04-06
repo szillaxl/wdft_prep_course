@@ -7,12 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
    <title>jquery</title>
 
    </head>
 
 <body>
 <h1>jquery</h1>
+
+<p>Date: <input type="text" id="datepicker"></p>
+
 <div>
     <div>
     <ul>
@@ -25,46 +29,46 @@
         test stuff
     </div>
 </div>
-<p>hey</p>
+<p id="greet">hey</p>
 <p>hello</p>
 
 <button id="button" type="button">Click Here!</button>
 
 
-
-
 <script>
-$('h1').css('color','red');
-var tag = $('p');
+    $('h1').css('color','red');
+    var tag = $('p');
 
-var h1 = $('h1').html();
-console.log(h1);
+    var h1 = $('h1').html();
+    console.log(h1);
 
-var ul = document.getElementsByTagName("ul");
-console.log(ul);
+    var ul = document.getElementsByTagName("ul");
+    console.log(ul);
 
-$(document).ready(function() 
-{
-console.log("Document Ready!");
-});
+    $(document).ready(function() 
+    {
+    console.log("Document Ready!");
+    });
 
-$('#button').click(my_click_function);
+    $('#button').click(my_click_function);
 
-function my_click_function() {
-console.log("Clicked!");
-}
+    function my_click_function() {
+    console.log("Clicked!");
+    }
 
 
-$("button").click(function(){
+    $("button").click(function(){
     $("button").animate({
          height: '150px',
-        width: '150px'
+        width: '150px'    
     });
-}); 
+    }); 
 
-$( "p" ).append( document.createTextNode( "Now this says this" ) );
+    $( "#greet" ).append( document.createTextNode( " Now this says this" ) );
 
-
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
 </script>
 </body>
 
