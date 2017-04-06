@@ -24,9 +24,9 @@ $('#input1').keypress(function() {
   console.log('keystrokes');
 });
 
-$('.boundaries').animate({borderTopWidth: "150px"}, 1000);
-$('.boundaries').animate({borderLeftWidth: "400px"}, 1000);
+//$('.boundaries').animate({borderTopWidth: "150px"}, 1000);
+//$('.boundaries').animate({borderLeftWidth: "400px"}, 1000);
 
 //or can I use this
 
-//$('.boundaries').animate({"borderTopWidth": "150px","borderLeftWidth": "400px"}, 2000);
+$('.boundaries').animate({"borderTopWidth": "150px","borderLeftWidth": "400px"}, 2000);
