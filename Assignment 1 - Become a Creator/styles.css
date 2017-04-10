@@ -64,7 +64,7 @@ img.resize{
 }
 
 #courses .each-course {
-    width: 20%;
+    width: 15%;
     margin: 20px 2%;
     height: 150px;
     display: inline-block;
@@ -73,10 +73,11 @@ img.resize{
     vertical-align: top;
     font-size: 25px;
     color: black;
+    padding: 20px;
  
 }
 
-#hov:hover {
+.hov:hover {
     background-color: yellow;
 }
 
@@ -88,4 +89,10 @@ a:link {
 a:visited {
     text-decoration: none;
     color:dodgerblue;
+}
+
+h1 {
+    padding-top: 30px;
+    padding-left: 50px;
+    color: mediumblue;
 }
