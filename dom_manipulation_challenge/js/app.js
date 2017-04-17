@@ -21,7 +21,8 @@ $('.box3').hover(function(){
 });
 
 $('#input1').keypress(function() {
-  console.log('keystrokes');
+  var output = $("#input1").val()
+  console.log('output');
 });
 
 //$('.boundaries').animate({borderTopWidth: "150px"}, 1000);
