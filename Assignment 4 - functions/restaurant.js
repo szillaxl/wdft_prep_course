@@ -3,18 +3,22 @@
 
 // This is a test order. It should take 8 seconds and should cost $65.
 // You can also test your restaurant functions with other menu items.
+
+
 order('Lobster','Wild Rice','Wine')
 
+let menu = generateMenu();
 
 // WRITE YOUR CODE BELOW
 // Order Function Here:
 function order(main, side, drink) {
-  if(main && side && drink) {
+  if(!main || !side || drink) {
     cook(main, side, drink);
   } else {
     console.log('Invalid order, please try again');
   }
 }
+
 // Cook Function Here:
 function cook(main, side, drink) {
   const allMenus = generateMenu();

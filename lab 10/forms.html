@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form</title>
+    <script>
+        function validateForm() {
+        var fname = document.forms["shos_form"]["firstname"].value;
+        if (fname == "") {
+            alert("Name must be filled out");
+            return false;
+            
+    }
+}
+</script>
+</head>
+<body>
+    <h1>contact form</h1>
+
+<form name='shos_form' onsubmit="return validateForm()" method="post">
+  First name:<input type="text" name="firstname" value="">
+  <br>
+  Last name:<input type="text" name="lastname" value="">
+  <br>
+  Full Address:<input type="text" name="address" value="">
+  <br>
+  Email:<input type="text" name="email" value="">
+  <br>
+  Phone Number:<input type="text" name="phonenumber" value="">
+  <br>
+  Message:<input type="text" name="message" value="">
+  <br>
+  Favourite Colour:  <br>
+  <input type="radio" name="red" value="red" checked> Red<br>
+  <input type="radio" name="green" value="green"> Green<br>
+  <input type="radio" name="blue" value="blue"> Blue
+
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
