@@ -1,24 +1,22 @@
-varr fs = require ('fs');
-var readableStream = 
-fs.createReadStream('quote.txt');
-var data= '';
+const fs = require('fs');
 
-readableStream.on('data',
- function(chunk) {
- data+=chunk;
+fs.readFile('quote.txt', 'utf8', (err, data) => {
+  if (err) throw err;
+  //console.log(data);
+  var fragment = data.split (" ")
+//console.log(fragment);
+var change = data.replace(/(B| b)\w+/g, " Brainstation");
+console.log(change);
+
+
+fs.writeFile('quoted.txt', change, (err) => {
+  if (err) throw err;
+  console.log('The file has been saved!');
 });
-readableStream.on('end', function() {
- console.log(data);
+
 });
 
-//look into this
-//pipe and streams
 
 
-var fs = require('fs');
-var readableStream =
-fs.createReadStream('quote.txt');
-var writableStream =
-fs.createWriteStream('quote2.txt');
-//Single Pipe
-readableStream.pipe(writableStream);
+
+//write files
